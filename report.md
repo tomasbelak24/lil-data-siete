@@ -18,13 +18,24 @@ Našu sieť sme si rozdelil na dve podsiete, podľa váh na hranách. Takto sme 
 
 ![](images/subnets.png)
 
-Vlastnosti podsietí:
+
+### Vlastnosti sietí a komunít
+
+Komunita, v našej sieti, predstavuje skupiny kongresmanov, ktorí sa navzájom spomínajú vo svojich prejavoch. V kladnej sieti majú tieto komunity veľký význam - ide o politikov, ktorí sa navzájom podporujú a spolupracujú. V priemere majú takéto komunity 20 členov, najmenšia má 5 členov a najväčšia 45 členov. Z našej siete ale vidno, že aj tieto komunity navzájom sa celkom podporujú. Negatívne komunity predstavujú skupiny politikov, ktorí medzi sebou najviac nesúhlasia alebo si oponujú. Týchto komunít je viac, ale sú menšie, s priemernoým počtom členov 8, minimom 2 a maximom 17. Pozitívne vzťahy medzi kongresmanmi vytvárajú silnejšie komunity.
+
+Za zmienku ale stojí, že pozitívna sieť má 212 vrcholov a 472 hrán, zatiaľ čo negatívna sieť má 97 vrcholov a 116 hrán. V pozitívnej komunite je priemerný stupeň vrcholov 3.9 a stredná hodnota iba 2. Priemer je vychýlený maximálnym stupňom, ktorý je v pozitívnej sieti až 28. V negatívnej sieti sú tieto hodnoty nižšie. Priemerný stupeň je 2.2, stredná hodnota len 1, maximum je 15. 
+
+**Popísať modularitu a hustotu**
+
 |                  | Kladná sieť | Záporná sieť |
 |------------------|-------------|--------------|
 | Modularita       | 0.609       |  0.72        |
 | Hustota          | 0.019       |  0.023       |
 | Priemerný stupeň | 3.925       |  2.206       |
 | Počet komunít    | 8           | 13           |
+
+### Nesúvislosť negatínej siete
+V negatívnej sieti je jeden hlavný komponent a 4 menšie komponenty. Menšie komponenty môžu predstavovať kongresmanov, ktorí všeobecne súhlasia s ostatnými, ale v niektorích špecifických situáciách/témach sa nezhodnú.
 
 ## Výskumná otázka 2: analýza centralít
 
