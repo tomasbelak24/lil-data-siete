@@ -91,9 +91,24 @@ Po tejto analýze sme chceli analyzovať tendencie politikov a zodpovedať otáz
 Ďalej z histogramu uvedenom v úvode tejto časti vidíme, že je veľké množstvo politikov, ktorí nikoho nespomínajú, ale zato takmer všetci sú v debatách spomenutí. Pri pohľade na out-degree distribúciu histogramu vieme pozorovať určitý fenomén ktorý sa vyskytuje pri powe-law distribúcií. Ktorý vyzerá že je prítomný v odľahlých hodnotách na konci pravého chvosta distribúcie so senátormi s vysokými spomínaním ostatných senátorov. Títo senátori významne ovplyvňujú distribúciu pre in-degree, v zmysle toho že skoro každý senátor bol spomenutý aj keď sa v out-degree nachádza veľmi veľký počet takých ktorý nikoho nespomenuli  čo zodpovedá aj vysokému počtu recipientov.  A tým pádom môže ovplyvňovať distribúciu pre in-degree rozdelenie.
 
 
-## Výskumná otázka 4: Silno súvislé komponenty
+## Výskumná otázka 4: Existujú v sieti silno súvislé komponenty ?
 
-## Výskumná otázka 5: Analýza self-mentions
+SSK identifikujú skupiny politikov, ktorí sú úzko prepojení prostredníctvom vzájomných zmienok, či už pozitívnych alebo negatívnych. Tieto komponenty odzrkadľujú skupiny s vysokým stupňom interných interakcií. Pokúsili sme sa identifikovať SSK na pozitívnej a negatívnej podsieti. K hľadaniu SSK sme použili funkciu strongly_connected_components z knižnice networkx.
+
+SSK v pozitívnej sieti by predstavovali skupiny politikov, ktorí sa často a vzájomne podporujú. Mohlo by ísť o frakcie alebo koalície s podobnými politickými záujmami alebo cieľmi. Zistili sme, že v pozitívnej sieti sa nachádza 126 SSK, z toho 4 obsahujú aspoň dva vrcholy. Najvačší SSK obsahuje 84 vrcholov a zvyšné tri obsahujú 2 vrcholy. Jednotlivé SSK sú v grafe odlíšené farbou. Sivou farbou sú vyznačené SSK veľkosti 1.
+
+![](images/ssk_pos.png)
+
+V negatívnej sieti by SSK ukazovali skupiny politikov, ktorí sú často spomenutí v kontexte konfliktov alebo opozície. Môže ísť o skupiny, ktoré sa navzájom kritizujú alebo sú v konflikte. Zistili sme, že v negatívnej sieti sa nachádza 88 SSK, z toho 7 obsahujú aspoň dva vrcholy. SSK v negatívnej sieti sú malé, kde 5 SSK obsahuje 2 vrcholy a 2 SKK obsahujú 3 vrcholy. Jednotlivé SSK sú v grafe odlíšené farbou. Sivou farbou sú vyznačené SSK veľkosti 1.
+
+![](images/ssk_neg.png)
+
+Vhodné vylepšenie by bolo prevedenie kondenzácie oboch grafov a nastavenie veľkosti vrcholu podľa počtu obsahujúcich vrcholov.
+
+
+
+
+## Výskumná otázka 5: Ako ovplyvňuje spomínanie samého seba celú sieť ?
 
 ## Záver
 
