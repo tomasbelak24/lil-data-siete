@@ -107,7 +107,7 @@ Vhodné vylepšenie by bolo prevedenie kondenzácie oboch grafov a nastavenie ve
 
 ## Výskumná otázka 5: Ako ovplyvňuje spomínanie samého seba celú sieť ?
 
-Chceli odsledovať či majú politici tendenciu rozprávať o sebe a ak áno tak v akom svetle.
+Chceli sme odsledovať či majú politici tendenciu rozprávať o sebe a ak áno tak v akom svetle.
 Zistili sme, že v sieti sa nachádzajú iba 2 slučky a v oboch prípadoch išlo o unikátneho politika, ktorý o sebe rozprával v pozitívnom zmysle.
 
 ![](images/self_ment.png)
