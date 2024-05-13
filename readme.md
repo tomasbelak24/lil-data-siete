@@ -93,7 +93,7 @@ Po tejto analýze sme chceli analyzovať tendencie politikov a zodpovedať otáz
 
 ## Výskumná otázka 4: Existujú v sieti silno súvislé komponenty ?
 
-SSK identifikujú skupiny politikov, ktorí sú úzko prepojení prostredníctvom vzájomných zmienok, či už pozitívnych alebo negatívnych. Tieto komponenty odzrkadľujú skupiny s vysokým stupňom interných interakcií. Pokúsili sme sa identifikovať SSK na pozitívnej a negatívnej podsieti.
+SSK identifikujú skupiny politikov, ktorí sú úzko prepojení prostredníctvom vzájomných zmienok, či už pozitívnych alebo negatívnych. Tieto komponenty odzrkadľujú skupiny s vysokým stupňom interných interakcií. Pokúsili sme sa identifikovať SSK na pozitívnej a negatívnej podsieti. K hľadaniu SSK sme použili funkciu strongly_connected_components z knižnice networkx.
 
 SSK v pozitívnej sieti by predstavovali skupiny politikov, ktorí sa často a vzájomne podporujú. Mohlo by ísť o frakcie alebo koalície s podobnými politickými záujmami alebo cieľmi. Zistili sme, že v pozitívnej sieti sa nachádza 126 SSK, z toho 4 obsahujú aspoň dva vrcholy. Najvačší SSK obsahuje 84 vrcholov a zvyšné tri obsahujú 2 vrcholy. Jednotlivé SSK sú v grafe odlíšené farbou. Sivou farbou sú vyznačené SSK veľkosti 1.
 
