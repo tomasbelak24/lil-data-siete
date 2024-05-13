@@ -62,6 +62,7 @@ Treťou a poslednou centralitou je centralita blízkosti. Tá vyjadruje priemern
 Na začiatku sme sa pozreli na rozdelenia stupňa vrcholov z pohľadu vchádzajúcich aj vycházdajúcich hrán. Vykreslili sme si histogram oboch typov stupňov, z ktorého sme sa dovtípili, že by mohlo ísť o mocninovú distribúciu. 
 
 ![](images/hist_degrees.png)
+![](images/cdf_inout_deg.png)
 
 Hypotézu sme overili dvomi metódami. Spravili sme log-log plot. Pre in-degree log-log plot pripomínal priamku, ale pre out-degree to nebolo voľným okom jasné. 
 ![](images/loglogin.png)
