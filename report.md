@@ -23,9 +23,13 @@ Našu sieť sme si rozdelil na dve podsiete, podľa váh na hranách. Takto sme 
 
 Komunita, v našej sieti, predstavuje skupiny kongresmanov, ktorí sa navzájom spomínajú vo svojich prejavoch. V kladnej sieti majú tieto komunity veľký význam - ide o politikov, ktorí sa navzájom podporujú a spolupracujú. V priemere majú takéto komunity 20 členov, najmenšia má 5 členov a najväčšia 45 členov. Z našej siete ale vidno, že aj tieto komunity navzájom sa celkom podporujú. Negatívne komunity predstavujú skupiny politikov, ktorí medzi sebou najviac nesúhlasia alebo si oponujú. Týchto komunít je viac, ale sú menšie, s priemernoým počtom členov 8, minimom 2 a maximom 17. Pozitívne vzťahy medzi kongresmanmi vytvárajú prepojenejšie komunity.
 
-Za zmienku ale stojí, že pozitívna sieť má 212 vrcholov a 472 hrán, zatiaľ čo negatívna sieť má 97 vrcholov a 116 hrán. V pozitívnej komunite je priemerný stupeň vrcholov 3.9 a stredná hodnota iba 2. Priemer je vychýlený maximálnym stupňom, ktorý je v pozitívnej sieti až 28. V negatívnej sieti sú tieto hodnoty nižšie. Priemerný stupeň je 2.2, stredná hodnota len 1, maximum je 15. 
+Za zmienku ale stojí, že pozitívna sieť má 212 vrcholov a 472 hrán, zatiaľ čo negatívna sieť má 97 vrcholov a 116 hrán. V pozitívnej komunite je priemerný stupeň vrcholov 3.9 a stredná hodnota iba 2. Priemer je vychýlený maximálnym stupňom, ktorý je v pozitívnej sieti až 28. V negatívnej sieti sú tieto hodnoty nižšie. Priemerný stupeň je 2.2, stredná hodnota len 1, maximum je 15. Vyplýva z toho, že pozitívne interakcie sú častejšie ako negatívne.
 
-**Popísať modularitu a hustotu**
+Modularita zápornej siete je vyššia ako modularita kladnej siete. Vyššia modularita znamená slabšie prepojenie medzi vzniknutými komunitami. Vyplýva z toho, že kladná sieť je lepšie prepojená a pri prípadnej simulácii šírenia informácie by sa informácia lepšie šírila práve v kladnej sieti.
+
+Z grafu by sme pre kladnú sieť mohli očakávať vyššiu hustotu, ale v skutočnosti je hustota kladnej siete nižšia ako hustota zápornej siete ( 1.9% < 2.3% ). Tento prekvapivý výsledok je spôsobený vysokým počtom vrcholov v kladnej sieti.
+
+Negatívna sieť má viac komunít (13) ako pozitívna sieť (8), čo naznačuje, že negatívne interakcie sú viac rozdrobené do menších skupín v porovnaní s pozitívnymi interakciami.
 
 |                  | Kladná sieť | Záporná sieť |
 |------------------|-------------|--------------|
@@ -34,7 +38,7 @@ Za zmienku ale stojí, že pozitívna sieť má 212 vrcholov a 472 hrán, zatia�
 | Priemerný stupeň | 3.925       |  2.206       |
 | Počet komunít    | 8           | 13           |
 
-### Nesúvislosť negatínej siete
+### Nesúvislosť negatívnej siete
 V negatívnej sieti je jeden hlavný komponent a 4 menšie komponenty. Menšie komponenty môžu predstavovať kongresmanov, ktorí všeobecne súhlasia s ostatnými, ale v niektorích špecifických situáciách/témach sa nezhodnú.
 
 ## Výskumná otázka 2: analýza centralít
