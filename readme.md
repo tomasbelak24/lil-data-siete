@@ -107,12 +107,13 @@ Vhodné vylepšenie by bolo prevedenie kondenzácie oboch grafov a nastavenie ve
 
 ## Výskumná otázka 5: Ako ovplyvňuje spomínanie samého seba celú sieť ?
 
-Chceli sme zistiť aký majú slučky vplyv na sieť. Chceli sme tým odsledovať či majú politici tendenciu rozprávať o sebe a ak áno tak v akom svetle.
+Chceli odsledovať či majú politici tendenciu rozprávať o sebe a ak áno tak v akom svetle.
 Zistili sme, že v sieti sa nachádzajú iba 2 slučky a v oboch prípadoch išlo o unikátneho politika, ktorý o sebe rozprával v pozitívnom zmysle.
 
 ![](images/self_ment.png)
 
-Kvôli nízkemu počtu slučiek sme vyvodili záver, že v ich analýze nebudeme pokračovať, lebo by nepriniesla žiadne užitočné informácie.
+Ďalej sme chceli zistiť aký majú slučky vplyv na sieť zistením korelácie medzi počtom slučiek jednotlivých vrcholov a ich centrality.
+Avšak kvôli nízkemu počtu slučiek sme vyvodili záver, že v ich analýze nebudeme pokračovať, lebo by nepriniesla žiadne užitočné informácie.
 
 ## Záver
 
