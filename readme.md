@@ -105,10 +105,14 @@ V negatívnej sieti by SSK ukazovali skupiny politikov, ktorí sú často spomen
 
 Vhodné vylepšenie by bolo prevedenie kondenzácie oboch grafov a nastavenie veľkosti vrcholu podľa počtu obsahujúcich vrcholov.
 
-
-
-
 ## Výskumná otázka 5: Ako ovplyvňuje spomínanie samého seba celú sieť ?
+
+Chceli sme zistiť aký majú slučky vplyv na sieť. Chceli sme tým odsledovať či majú politici tendenciu rozprávať o sebe a ak áno tak v akom svetle.
+Zistili sme, že v sieti sa nachádzajú iba 2 slučky a v oboch prípadoch išlo o unikátneho politika, ktorý o sebe rozprával v pozitívnom zmysle.
+
+![](images/self_ment.png)
+
+Kvôli nízkemu počtu slučiek sme vyvodili záver, že v ich analýze nebudeme pokračovať, lebo by nepriniesla žiadne užitočné informácie.
 
 ## Záver
 
