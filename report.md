@@ -12,7 +12,7 @@ Naša sieť popisuje rečnícke prejavy politikov Kongresu Spojených štátov. 
 ![Vizualizácia celej siete. Červené hrany majú negatívnu váhu, zelené váhy pozitívnu.](images/net.png)
 
 ## Výskumná otázka 1: štruktúra siete a detekcia komunít
-Priemerný stupeň vrcholov siete je `6.98`. Teda za sledované obdobie, jeden kongresman vo svojich rečiach spomenie skoro 7 ďalších kongresmanov. 
+Priemerný stupeň vrcholov siete je `6.98`. Teda za sledované obdobie, jeden kongresman vo svojich rečiach spomenie skoro 7 ďalších kongresmanov, alebo bol spomenutý skoro 7 ďalšími kongresmanmi. 
 
 Našu sieť sme si rozdelil na dve podsiete, podľa váh na hranách. Takto sme dostali dve nové siete, ktoré môžeme vidieť nižšie na grafe. Vľavo je sieť zložená z kladných hrán, vpravo zo záporných hrán. V prvom riadku sú obe siete s rovnakým rozložením vrcholov, a v druhom riadku sú vrcholy usporiadané tak, aby susediace vrcholy blízko seba.
 
