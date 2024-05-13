@@ -45,7 +45,7 @@ Betweenness centrality, centralita prepojenosti, vyjadruje podiel najkratších 
 
 Treťou centralitou je centralita blízkosti. Tá vyjadruje priemernú vzdialenosť vrcholu od ostatných vrcholov a počíta sa ako podiel jednotky a priemernej vzdialenosti. 
 
-![](images/centralities.png)
+![Trojica grafov zobrazujuca centrality siete](images/centralities.png)
 
 ## Výskumná otázka 3: analýza "selfmentions"
 
