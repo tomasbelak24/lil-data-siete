@@ -14,7 +14,7 @@ Naša sieť popisuje rečnícke prejavy politikov Kongresu Spojených štátov. 
 ## Výskumná otázka 1: štruktúra siete a detekcia komunít
 Priemerný stupeň vrcholov siete je `6.98`. Teda za sledované obdobie bol priemerný kongresman spomenutý v niekoho reči (aj svojej), alebo spomínal niekoho vo svojej skoro 7-krát.
 
-Našu sieť sme si rozdelil na dve podsiete, podľa váh na hranách. Takto sme dostali dve nové siete, ktoré môžeme vidieť nižšie na grafe. Vľavo je sieť zložená z kladných hrán (pozitívne spomenutie), vpravo zo záporných hrán (negatívne spomenutie). V prvom riadku sú obe siete s rovnakým rozložením vrcholov, a v druhom riadku sú vrcholy usporiadané tak, aby susediace vrcholy blízko seba.
+Našu sieť sme si rozdelil na dve podsiete, podľa váh na hranách. Takto sme dostali dve nové siete, ktoré môžeme vidieť nižšie na grafe. Vľavo je sieť zložená z kladných hrán (pozitívne spomenutie), vpravo zo záporných hrán (negatívne spomenutie). V prvom riadku sú obe siete s rovnakým rozložením vrcholov, a v druhom riadku sú vrcholy usporiadané tak, aby boli vrcholy v rámci jednej komunity blízko seba. Vrcholy sme do komunít zaradili tak, aby sme maximalizovali modularitu v sieti medzi komunitami. Použili sme python knižnicu community_louvain.
 
 ![](images/subnets.png)
 
