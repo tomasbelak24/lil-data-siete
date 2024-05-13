@@ -57,7 +57,7 @@ Treťou a poslednou centralitou je centralita blízkosti. Tá vyjadruje priemern
 
 ![Trojica grafov zobrazujuca centrality siete](images/centralities.png)
 
-## Výskumná otázka 3: Broadcasters&Recipients
+## Výskumná otázka 3: Analýza distribúcie in-degree a out-degree vrcholov a vyplývajúce otázky z analýzi
 
 Na začiatku sme sa pozreli na rozdelenia stupňa vrcholov z pohľadu vchádzajúcich aj vycházdajúcich hrán. Vykreslili sme si histogram oboch typov stupňov, z ktorého sme sa dovtípili, že by mohlo ísť o mocninovú distribúciu. 
 
@@ -88,7 +88,7 @@ Po tejto analýze sme chceli analyzovať tendencie politikov a zodpovedať otáz
 
 ![](images/venn.png)
 
-Ďalej z histogramu uvedenom v úvode tejto časti vidíme, že je veľké množstvo politikov, ktorí nikoho nespomínajú, ale zato takmer všetci sú v debatách spomenutí. *TODO ADAM DOPISAT*
+Ďalej z histogramu uvedenom v úvode tejto časti vidíme, že je veľké množstvo politikov, ktorí nikoho nespomínajú, ale zato takmer všetci sú v debatách spomenutí. Pri pohľade na out-degree distribúciu histogramu vieme pozorovať určitý fenomén ktorý sa vyskytuje pri powe-law distribúcií. Ktorý vyzerá že je prítomný v odľahlých hodnotách na konci pravého chvosta distribúcie so senátormi s vysokými spomínaním ostatných senátorov. Títo senátori významne ovplyvňujú distribúciu pre in-degree, v zmysle toho že skoro každý senátor bol spomenutý aj keď sa v out-degree nachádza veľmi veľký počet takých ktorý nikoho nespomenuli  čo zodpovedá aj vysokému počtu recipientov.  A tým pádom môže ovplyvňovať distribúciu pre in-degree rozdelenie.
 
 
 ## Výskumná otázka 4: Silno súvislé komponenty
