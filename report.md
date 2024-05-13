@@ -38,6 +38,14 @@ Za zmienku ale stojí, že pozitívna sieť má 212 vrcholov a 472 hrán, zatia�
 V negatívnej sieti je jeden hlavný komponent a 4 menšie komponenty. Menšie komponenty môžu predstavovať kongresmanov, ktorí všeobecne súhlasia s ostatnými, ale v niektorích špecifických situáciách/témach sa nezhodnú.
 
 ## Výskumná otázka 2: analýza centralít
+V tejto časti sa pokúsime nájsť kongresmanov s najväčším vplyvom pomocou centralít. Prvou je centralita stupňa vrchola. Na ľavom grafe väčší krúžok znamená vyššiu centralitu. Môžeme si všimnúť, že čím je vrchol bližšie stredu, tým je jeho centralita vyššia. Centralita stupňa vrchola vyjadruje podiel počtu susedov a počtu všetkých vrcholov.
+**vysvetliť, aký má význam/interpretovať centralitu**
+
+Betweenness centrality, centralita prepojenosti, vyjadruje podiel najkratších prechádzajúcich daným vrcholom a všetkých najkratších ciest. Môžeme si všimnúť, že na obvode grafu sú prevažne vrcholy s centralitou nula. Tieto vrcholy majú len vchádzajúce hrany, a žiadne vychádzajúce. **Popisat body s vysokou centralitou**
+
+Treťou centralitou je centralita blízkosti. Tá vyjadruje priemernú vzdialenosť vrcholu od ostatných vrcholov a počíta sa ako podiel jednotky a priemernej vzdialenosti. 
+
+![](images/centralities.png)
 
 ## Výskumná otázka 3: analýza "selfmentions"
 
