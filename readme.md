@@ -1,4 +1,4 @@
-# Analýza ... medzi členmi kongresu Spojených štátov Amerických
+# Analýza interakcie medzi členmi kongresu Spojených štátov Amerických
 ```
 Veda o sieťach, 2024
 Roderik Antol, Tomáš Belák, Adam Lopaška, František Václav Man
@@ -13,7 +13,9 @@ Priemerný stupeň vrcholov siete je `6.98`. Teda za sledované obdobie bol prie
 
 ![Vizualizácia celej siete. Červené hrany majú negatívnu váhu, zelené váhy pozitívnu.](images/net.png)
 
-## Výskumná otázka 1: Prevažujú v našej sieti skôr pozitívne alebo negatívne spomenutia. (Prevažovala v tomto roku skôr negatívna kritická nálada s nezhodami alebo viac pozitívna s vyjadrením podpory) / Zoskupujú sa politici na základe spoločnej podpory / opozície?
+## Výskumná otázka 1: Prevažujú v našej sieti skôr pozitívne alebo negatívne spomenutia ? 
+- Prevažovala v tomto roku skôr negatívna kritická nálada s nezhodami alebo viac pozitívna s vyjadrením podpory
+- Zoskupujú sa politici na základe spoločnej podpory / opozície ?
 
 ![](images/subnets.png)
 
