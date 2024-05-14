@@ -1,8 +1,9 @@
 # Analýza interakcie medzi členmi kongresu Spojených štátov Amerických
 ```
 Veda o sieťach, 2024
-Roderik Antol, Tomáš Belák, Adam Lopaška, František Václav Man
+Roderik Antol (25%), Tomáš Belák (25%), Adam Lopaška (25%), František Václav Man (25%)
 ```
+Odkaz na video: [https://youtu.be/A_FKzVY-Rl4](https://youtu.be/A_FKzVY-Rl4)
 
 ## Popis siete
 Naša sieť popisuje rečnícke prejavy politikov Kongresu Spojených štátov. V sieti máme 219 kongresmanov (vrcholov) a 764 hrán - spomenutí kongresmana vo svojom prejave. Hrany sú orientované, váhované a graf obsahuje násobné hrany a slučky. Váha hrany závisí od charakteru spomenutia - kladné spomenutie/súhlas má váhu `1` a negatívne spomenutie/nesúhlas má váhu `-1`. 
