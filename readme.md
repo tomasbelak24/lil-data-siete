@@ -117,7 +117,7 @@ Zistili sme, že v sieti sa nachádzajú iba 2 slučky a v oboch prípadoch išl
 Avšak kvôli nízkemu počtu slučiek sme vyvodili záver, že v ich analýze nebudeme pokračovať, lebo by nepriniesla žiadne užitočné informácie.
 
 ## Záver
-
+Naša analýza priniesla viacero zaujímavých výsledkov. V prvej časti sme zistili, že kongresmani sa navzájom spomínajú viac pozitívne a tieto pozitívne vzťahy tvoria pevnejšie a väčšie komunity. Negatívne zmienky sú menej časté a zasahujú menej politikov. Následne sme objavili vplivných politikov - politikov, ktorí spájajú komunity či sa vyjadrujú k veľa veciam. Našli sme jeden veľký slino súvislý komponent pre sieť pozitívnych zmienok, čo ukazuje vzájomnú podporu. Našli sme aj politikov, ktorí nespomínajú nikoho iného, ale sú spomínaní inými, a naopak. Na konci sme skúšali zistiť, či to, že spomínam sám seba má nejaký vplyv, ale nemali sme na to dosť dát. 
 
 ## Zdroj dát
 ```
