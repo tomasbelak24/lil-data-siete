@@ -17,9 +17,9 @@ Priemerný stupeň vrcholov siete je `6.98`. Teda za sledované obdobie bol prie
 
 ![](images/subnets.png)
 
-Našu sieť sme si rozdelil na dve podsiete, podľa váh na hranách. Takto sme dostali dve nové siete, ktoré môžeme vidieť nižšie na grafe. Vľavo je sieť zložená z kladných hrán, ktoré reprezentujú pozitívne spomenutia, vpravo zo záporných hrán, ktoré reprezentujú negatívne spomenutia. Zobrazili sme si tieto siete do dvoch riadkov.
+Našu sieť sme si rozdelil na dve podsiete, podľa váh na hranách. Takto sme dostali dve nové siete, ktoré môžeme vidieť vyššie na grafe. Vľavo je sieť zložená z kladných hrán, ktoré reprezentujú pozitívne spomenutia, vpravo zo záporných hrán, ktoré reprezentujú negatívne spomenutia. Zobrazili sme si tieto siete do dvoch riadkov.
 
-V prvom riadku sú obe siete s rovnakým rozložením vrcholov, aby sme vedeli vizuálne porovnať, ktoré vrcholy sa nachádzajú v pozitívnych aj negatívnych sieťach. Z výsledkov sme ale zistili, že pozitívna sieť obsahuje 212 vrchol (takmer všetky) a 472 hrán. Záporná sieť obsahuje menej ako polovicu kongresmanov z celkového počtu (97) a majú 116 hrán, resp. negatívnych zmienok. Môžeme teda z týchto pozorovaní vidieť, že pozitívne zmienky v diskusiách sú častejšie. Môže to naznačovať to, že v tomto roku títo politici mávali skôr zhodné názory a nepreberali až také množstvo kontroverzných tématík.
+V prvom riadku sú obe siete s rovnakým rozložením vrcholov, aby sme vedeli vizuálne porovnať, ktoré vrcholy sa nachádzajú v pozitívnych aj negatívnych sieťach. Z výsledkov sme ale zistili, že pozitívna sieť obsahuje 212 vrcholov (takmer všetky) a 472 hrán. Záporná sieť obsahuje menej ako polovicu kongresmanov z celkového počtu (97) a majú 116 hrán, resp. negatívnych zmienok. Môžeme teda z týchto pozorovaní vidieť, že pozitívne zmienky v diskusiách sú častejšie. Môže to naznačovať to, že v tomto roku títo politici mávali skôr zhodné názory a nepreberali až také množstvo kontroverzných tématík.
 V druhom riadku sú vrcholy usporiadané tak, aby boli vrcholy v rámci jednej komunity blízko seba. Vrcholy sme do komunít zaradili tak, aby sme maximalizovali modularitu v sieti medzi komunitami. Použili sme python knižnicu community_louvain.
 
 Komunita, v našej sieti predstavuje skupiny kongresmanov, ktorí sa navzájom spomínajú vo svojich prejavoch. V kladnej sieti majú tieto komunity veľký význam - ide o politikov, ktorí sa navzájom podporujú a spolupracujú. V priemere majú takéto komunity 20 členov, najmenšia má 5 členov a najväčšia 45 členov. Z našej siete ale vidno, že aj tieto komunity navzájom sa celkom podporujú. Negatívne komunity predstavujú skupiny politikov, ktorí medzi sebou najviac nesúhlasia alebo si oponujú. Týchto komunít je viac, ale sú menšie, s priemernoým počtom členov 8, minimom 2 a maximom 17. 
@@ -40,19 +40,19 @@ Negatívna sieť má viac komunít (13) ako pozitívna sieť (8), čo naznačuje
 | Priemerný stupeň | 3.925       |  2.206       |
 | Počet komunít    | 8           | 13           |
 
-## Výskumná otázka 2: Nachádzajú sa v našej sieti politici, ktorí majú väčší vplyv ako ostaní alebo odlišujú sa od ostatných?
+## Výskumná otázka 2: Nachádzajú sa v našej sieti politici, ktorí majú väčší vplyv ako ostatní alebo odlišujú sa od ostatných?
 Pri tejto otázke sme sa museli zamyslieť nad tým, čo pre nás predstavuje vplyvný politik a podľa toho ho skúsiť identifikovať. 
 
 Politik s výsokým počtom zmienok:
 Vplyvný politik v našej situácií môže predstavovať osobu, ktorú veľa ľudí spomína, či už kladne alebo záporne, alebo táto osoba vo svojich prejavoch spomína množstvo politikov. Takýto vplyv naznačuje, že títo kongresmani sa aktívne zapájajú do viacerých diskusií alebo tém, čo svedčí o ich aktívnej účasti v sieti. Z politického hľadiska môžu tieto osoby často vyjadrovať názory, navrhovať iniciatívy alebo byť veľmi aktívny v diskusiách, čo z nich robí ústredné postavy. 
 
-Týchto politikov sme identifikovali pomocou centrality stupňa vrcholov, ktorá vyjadruje podiel počtu susedov a počtu všetkých vrcholov. Môže ju pozorovať na ľavom grafe, kde väčšie krúžky znamenajú vyššiu centralitu. Môže vidieť, že je takýchto vrcholov / politikov viacero a prevažne v strede.
+Týchto politikov sme identifikovali pomocou centrality stupňa vrcholov, ktorá vyjadruje podiel počtu susedov a počtu všetkých vrcholov. Môže ju pozorovať na ľavom grafe nižšie, kde väčšie krúžky znamenajú vyššiu centralitu. Môžeme vidieť, že je takýchto vrcholov / politikov viacero a prevažne v strede.
 
 Politik spájajúci komunity:
-Betweenness centrality, centralita prepojenosti, vyjadruje podiel najkratších prechádzajúcich daným vrcholom a všetkých najkratších ciest. Môžeme si všimnúť, že na obvode stredného grafu sú prevažne vrcholy s centralitou nula. Tieto vrcholy majú len vchádzajúce hrany, a žiadne vychádzajúce. Hoci betweenness centralita nemusí nevyhnutne naznačovať priamy vplyv alebo moc, naznačuje, že uzol (v našom kontexte politik) má potenciál ovplyvňovať nepriamo prostredníctvom kontroly toku informácií alebo komunikačných ciest v sieti. V našom prípade to ale však môže indikovať klúčovú osobu ako prezident senátu, ktorý sa príhovoroch vyjadrujú k rozdielnym skupinám v sieti pozitívne alebo aj negatívne. Vidíme, že takúto osobu representuje vrchol s číslom 124.
+Betweenness centrality, centralita prepojenosti, vyjadruje podiel najkratších prechádzajúcich daným vrcholom a všetkých najkratších ciest. Môžeme si všimnúť, že na obvode stredného grafu sú prevažne vrcholy s centralitou nula. Tieto vrcholy majú len vchádzajúce hrany, a žiadne vychádzajúce. Hoci betweenness centralita nemusí nevyhnutne naznačovať priamy vplyv alebo moc, naznačuje, že uzol (v našom kontexte politik) má potenciál ovplyvňovať nepriamo prostredníctvom kontroly toku informácií alebo komunikačných ciest v sieti. V našom prípade to ale však môže indikovať klúčovú osobu ako prezident senátu, ktorý sa príhovoroch vyjadrujú k rozdielnym skupinám v sieti pozitívne alebo aj negatívne. Vidíme, že takúto osobu representuje vrchol s číslom 124, na grafe v strede žltou farbou.
 
 Closeness centrality:
-Treťou a poslednou centralitou je centralita blízkosti. Tá vyjadruje priemernú vzdialenosť vrcholu od ostatných vrcholov a počíta sa ako podiel jednotky a priemernej vzdialenosti. Hoci nemusí byť vplyv osoby s takouto vysokou centralitou hneď očividný, môže predstavovať následné veci. Kongresmani s vysokou centralitou blízkosti by mohli mať významný vplyv na rozhodovacie procesy v rámci kongresu. Ich schopnosť rýchlo šíriť informácie a komunikovať s ostatnými im môže umožniť formovať diskusie, vytvárať koalície a ovplyvňovať hlasovanie o legislatívnych otázkach. Tuto ale môže vidieť z pravého grafu, že väčšina vrcholov má porovnateľné centrality až na pár výnimiek, ktoré majú nulové centrality. Títo politici môžu representovať práve také osobnosti, ktoré sa menej zapájajú do diskusií a skôr sa orientujú a debatujú s menej vplyvnými kongresmanmi, s menším počtom spomínaní.
+Treťou a poslednou centralitou je centralita blízkosti. Tá vyjadruje priemernú vzdialenosť vrcholu od ostatných vrcholov a počíta sa ako podiel jednotky a priemernej vzdialenosti. Hoci nemusí byť vplyv osoby s takouto vysokou centralitou hneď očividný, môže predstavovať nasledovné veci. Kongresmani s vysokou centralitou blízkosti by mohli mať významný vplyv na rozhodovacie procesy v rámci kongresu. Ich schopnosť rýchlo šíriť informácie a komunikovať s ostatnými im môže umožniť formovať diskusie, vytvárať koalície a ovplyvňovať hlasovanie o legislatívnych otázkach. Tuto ale môže vidieť z pravého grafu, že väčšina vrcholov má porovnateľné centrality až na pár výnimiek, ktoré majú nulové centrality. Títo politici môžu representovať práve také osobnosti, ktoré sa menej zapájajú do diskusií a skôr sa orientujú a debatujú s menej vplyvnými kongresmanmi, s menším počtom spomínaní.
 
 
 ![Trojica grafov zobrazujuca centrality siete](images/centralities.png)
@@ -89,7 +89,7 @@ Po tejto analýze sme chceli analyzovať tendencie politikov a zodpovedať otáz
 
 ![](images/venn.png)
 
-Ďalej z histogramu uvedenom v úvode tejto časti vidíme, že je veľké množstvo politikov, ktorí nikoho nespomínajú, ale zato takmer všetci sú v debatách spomenutí. Pri pohľade na out-degree distribúciu histogramu vieme pozorovať určitý fenomén ktorý sa vyskytuje pri powe-law distribúcií. Ktorý vyzerá že je prítomný v odľahlých hodnotách na konci pravého chvosta distribúcie so senátormi s vysokými spomínaním ostatných senátorov. Títo senátori významne ovplyvňujú distribúciu pre in-degree, v zmysle toho že skoro každý senátor bol spomenutý aj keď sa v out-degree nachádza veľmi veľký počet takých ktorý nikoho nespomenuli  čo zodpovedá aj vysokému počtu recipientov.  A tým pádom môže ovplyvňovať distribúciu pre in-degree rozdelenie.
+Ďalej z histogramu uvedenom v úvode tejto časti vidíme, že je veľké množstvo politikov, ktorí nikoho nespomínajú, ale zato takmer všetci sú v debatách spomenutí. Pri pohľade na out-degree distribúciu histogramu vieme pozorovať určitý fenomén ktorý sa vyskytuje pri powe-law distribúcií. Ktorý vyzerá že je prítomný v odľahlých hodnotách na konci pravého chvosta distribúcie so senátormi s vysokými spomínaním ostatných senátorov. Títo senátori významne ovplyvňujú distribúciu pre in-degree, v zmysle toho že skoro každý senátor bol spomenutý aj keď sa v out-degree nachádza veľmi veľký počet takých, ktorí nikoho nespomenuli, čo zodpovedá aj vysokému počtu recipientov.  A tým pádom môže ovplyvňovať distribúciu pre in-degree rozdelenie.
 
 
 ## Výskumná otázka 4: Existujú v sieti silno súvislé komponenty ?
@@ -118,7 +118,8 @@ Avšak kvôli nízkemu počtu slučiek sme vyvodili záver, že v ich analýze n
 
 ## Záver
 
-## Zdroje/citácie
+
+## Zdroj dát
 ```
 @MISC{konect:2018:convote,
     title = {Congress votes network dataset -- {KONECT}},
